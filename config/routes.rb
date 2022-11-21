@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   
   ##################### START Dashboard #####################
-  get "dashboard", to:'dashboard#index'
+  get "feed", to:'dashboard#index'
   get "setting", to:'dashboard#home'
   get "new-materials", to:"materials#new"
   get "new-levels", to:"levels#new"
