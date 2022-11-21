@@ -3,7 +3,14 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
         :recoverable, :rememberable, :validatable, :trackable, :authentication_keys => [:logged]
-
+  
+        
+  ### RELATIONS
+  has_many :levels, class_name: "Level", foreign_key: "user_id", dependent: :destroy
+  has_many :materials, class_name: "Material", foreign_key: "user_id", dependent: :destroy
+  has_many :schools, class_name: "School", foreign_key: "user_id", dependent: :destroy
+  has_many :citytowns, class_name: "Citytown", foreign_key: "user_id", dependent: :destroy
+ 
 
         attr_writer :logged
   #enum :role, student: "student", teacher: "teacher", team: "team", default: "student"

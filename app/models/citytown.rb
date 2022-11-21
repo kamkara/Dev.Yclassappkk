@@ -1,4 +1,4 @@
-class Material < ApplicationRecord
+class Citytown < ApplicationRecord
   belongs_to :user
 
   #Slugged concern

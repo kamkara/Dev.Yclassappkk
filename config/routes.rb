@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'feed/index'
+  resources :citytowns
   resources :schools
-  resources :citytwons
   resources :materials
   resources :levels
 
@@ -20,7 +19,7 @@ Rails.application.routes.draw do
 
   
   ##################### START Dashboard #####################
-  get "feed", to:'dashboard#index'
+  get "dashboard", to:'dashboard#index'
   get "setting", to:'dashboard#home'
   get "new-materials", to:"materials#new"
   get "new-levels", to:"levels#new"

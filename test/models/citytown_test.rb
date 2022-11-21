@@ -1,6 +1,6 @@
 require "test_helper"
 
-class CitytwonTest < ActiveSupport::TestCase
+class CitytownTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
