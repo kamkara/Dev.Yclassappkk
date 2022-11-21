@@ -23,15 +23,15 @@ class ApplicationController < ActionController::Base
 
 private
     def set_city
-        @citytowns = Citytown.all
+       # @citytowns = Citytown.all
     end
 
     def set_material
-        @materials = Material.all
+        #@materials = Material.all
     end
 
     def set_level
-        @levels = Level.all
+       # @levels = Level.all
     end
     def store_action
         return unless request.get? 

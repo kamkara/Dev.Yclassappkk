@@ -13,5 +13,5 @@ class HomepageController < ApplicationController
     else
       return "feed"
     end
-
+  end
 end
