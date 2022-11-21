@@ -20,18 +20,18 @@
   </p>
 
   <p class="my-5">
+    <strong class="block font-medium mb-1">Level name:</strong>
+    <%= course.level_name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Material name:</strong>
+    <%= course.material_name %>
+  </p>
+
+  <p class="my-5">
     <strong class="block font-medium mb-1">User:</strong>
     <%= course.user_id %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Level:</strong>
-    <%= course.level_id %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Material:</strong>
-    <%= course.material_id %>
   </p>
 
   <% if action_name != "show" %>

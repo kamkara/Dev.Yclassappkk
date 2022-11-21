@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :materials, class_name: "Material", foreign_key: "user_id", dependent: :destroy
   has_many :schools, class_name: "School", foreign_key: "user_id", dependent: :destroy
   has_many :citytowns, class_name: "Citytown", foreign_key: "user_id", dependent: :destroy
+  has_many :courses, class_name: "Course", foreign_key: "user_id", dependent: :destroy
  
 
   attr_writer :logged
