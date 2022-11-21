@@ -7,11 +7,11 @@ class HomepageController < ApplicationController
 
   private
 
-  def set_home_feed
-    if current_user.status == "Students" && current_user.welcomes.none?
-      return "welcome"
-    else
-      return "feed"
-    end
-  end
+  #def set_home_feed
+    #if current_user.status == "Students" && current_user.welcomes.none?
+      #return "welcome"
+    #else
+     #return "feed"
+    #end
+  #end
 end

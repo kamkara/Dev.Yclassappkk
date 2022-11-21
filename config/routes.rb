@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :courses
   resources :citytowns
   resources :schools
   resources :materials
@@ -6,6 +7,13 @@ Rails.application.routes.draw do
 
   ##################### START Membership #####################
   ##################### END Membership #######################
+  
+  ##################### START Course #####################
+  #get "feed", to:"courses#index"
+  get "show-course", to:"courses#show"
+  get "new-course", to:"courses#new"
+
+  ##################### END Course #######################
 
   
   ##################### START Membership #####################

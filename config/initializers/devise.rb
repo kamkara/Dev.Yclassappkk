@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '8043752db69eed1b6a4a3157e5421411eff39aeb0f1bcca9e9c7add2c7620602d39ad95d22c7bf0fc5bf720f667226b7b6df9be55fba9923320314480c5f1300'
+  config.secret_key = '8043752db69eed1b6a4a3157e5421411eff39aeb0f1bcca9e9c7add2c7620602d39ad95d22c7bf0fc5bf720f667226b7b6df9be55fba9923320314480c5f1300'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -69,7 +69,7 @@ Devise.setup do |config|
   # It can be set to an array that will enable params authentication only for the
   # given strategies, for example, `config.params_authenticatable = [:database]` will
   # enable it only for database (email + password) authentication.
-  # config.params_authenticatable = true
+  config.params_authenticatable = true
 
   # Tell if authentication through HTTP Auth is enabled. False by default.
   # It can be set to an array that will enable http authentication only for the
@@ -82,7 +82,7 @@ Devise.setup do |config|
   # config.http_authenticatable = false
 
   # If 401 status code should be returned for AJAX requests. True by default.
-  # config.http_authenticatable_on_xhr = true
+  config.http_authenticatable_on_xhr = true
 
   # The realm used in Http Basic Authentication. 'Application' by default.
   # config.http_authentication_realm = 'Application'

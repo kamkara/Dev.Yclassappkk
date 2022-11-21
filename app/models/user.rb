@@ -12,7 +12,7 @@ class User < ApplicationRecord
   has_many :citytowns, class_name: "Citytown", foreign_key: "user_id", dependent: :destroy
  
 
-        attr_writer :logged
+  attr_writer :logged
   #enum :role, student: "student", teacher: "teacher", team: "team", default: "student"
   
   

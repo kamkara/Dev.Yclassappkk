@@ -10,11 +10,11 @@ class ApplicationController < ActionController::Base
     before_action :configure_permitted_parameters, if: :devise_controller?
     #After sign in
     def after_sign_in_path_for(resource)
-        feed_path
+        root_path
     end
     
     def after_sign_up_path_for(resource)
-        feed_path
+        root_path
     end
     def after_sign_out_path_for(resource)
         root_path
@@ -23,15 +23,15 @@ class ApplicationController < ActionController::Base
 
 private
     def set_city
-       # @citytowns = Citytown.all
+        @citytowns = Citytown.all
     end
 
     def set_material
-        #@materials = Material.all
+        @materials = Material.all
     end
 
     def set_level
-       # @levels = Level.all
+        @levels = Level.all
     end
     def store_action
         return unless request.get? 
