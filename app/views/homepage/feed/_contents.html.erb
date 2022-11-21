@@ -1,0 +1,31 @@
+<div class=" ">
+    <% @feed_courses.each do |fc| %>
+        <div class="card p-4 border rounded-md m-2">
+            <div class="card-header">
+                <h1 class="font-semibold">
+                    <%= fc.title %>
+                </h1>
+            </div>
+            <div class="card-body">
+                <%= link_to course_path(fc)  do %>
+                    <%= truncate(strip_tags(fc.content.to_s.html_safe), length: 400) %>
+                    <span class="ln-btn-color hover:ln-btn-hover-color ">Continuer la lecture</span> 
+                <% end %>
+            </div>
+            <div class="flex justify-between my-2 border-t mt-2">
+                <div  class="flex ml-2 text-md font-semibold">
+                    <%= link_to course_path(fc), class:""  do %>
+                        <%#= course.exercices.count %>
+                        <span class="ml-2">Exercices</span>
+                    <% end %>
+                </div>
+                <div  class="flex ml-2 text-md font-semibold">
+                    <%= link_to course_path(fc), class:""  do %>
+                        <%#= course.questions.count %>
+                        <span class=" ml-2">Corrigés</span>
+                    <% end %>
+                </div>
+            </div>
+        </div>   
+    <% end %>
+</div>

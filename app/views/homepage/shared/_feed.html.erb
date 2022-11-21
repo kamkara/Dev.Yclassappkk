@@ -4,10 +4,16 @@
     <div class="flex flex-col">
         <%= render "homepage/feed/navbar" %>
     </div>
-    <div class="flex flex-wrap w-full">
-        <div class="w-full md:w-1/4  mb-4 bg-orange-500 h-52 "></div>
-        <div class="w-full md:w-2/4  mb-4 bg-blue-500 h-52 "></div>
-        <div class="w-full md:w-1/4  mb-4 bg-orange-500 h-52 "></div>
+    <div class="flex flex-wrap w-full mx-2">
+        <div class="w-full md:w-1/4  mb-4  bg-orange-500 ">
+            <%= render "homepage/feed/materials" %>
+        </div>
+        <div class="w-full md:w-2/4  mb-4  bg-blue-500 ">
+            <%= render "homepage/feed/contents" %>
+        </div>
+        <div class="w-full md:w-1/4  mb-4 bg-orange-500 ">
+            <%= render "homepage/feed/user_profil" %>
+        </div>
     </div>
 
 

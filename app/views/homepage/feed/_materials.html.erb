@@ -1,0 +1,11 @@
+<div class="mx-4 my-2 px-4 border ">
+    <% @feed_materials.each do |fm| %>
+        <ul class="font-bold my-2">
+            <il class="">
+                <%= link_to "#"  do %>
+                    <%= fm.title %>
+                <% end %>            
+            </il>
+        </ul>
+    <% end %>
+</div>
