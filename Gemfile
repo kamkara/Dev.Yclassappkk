@@ -33,6 +33,30 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
+################################################
+#                   PROJECT GEMS               #
+#################################################
+
+
+####################   MEMBERSHIPS   ###############
+gem 'devise', '~> 4.8', '>= 4.8.1'
+#gem 'devise_invitable', '~> 2.0', '>= 2.0.6'
+#gem 'devise-i18n', '~> 1.10', '>= 1.10.2'
+
+
+####################  FORMS && SLUGGED  #######################
+#gem 'simple_form', '~> 5.1'
+gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+
+
+gem 'platform_sh_rails'
+gem 'unicorn', '~> 6.1', :group => :production
+#gem "aws-sdk-s3", require: false
+
+
+
+
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
