@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'feed/index'
+  resources :schools
+  resources :citytwons
+  resources :materials
+  resources :levels
 
   ##################### START Membership #####################
   ##################### END Membership #######################

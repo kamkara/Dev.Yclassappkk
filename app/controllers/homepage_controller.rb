@@ -1,6 +1,6 @@
 class HomepageController < ApplicationController
   def index
-    redirect_to feed_path if user_signed_in?
+    #redirect_to feed_path if user_signed_in?
     #redirect_to feed_path if user_signed_in? && set_home_feed == "feed"
     #redirect_to welcome_path if user_signed_in? && set_home_feed == "welcome"
   end
