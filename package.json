@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "daisyui": "^2.41.0"
+    "daisyui": "^2.41.0",
+    "stimulus-read-more": "^3.0.0"
   }
 }

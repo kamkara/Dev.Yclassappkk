@@ -8,10 +8,12 @@
             </div>
             <div class="card-body text-normal p-2">
                 <%= link_to course_path(fc)  do %>
-                    <%= truncate(strip_tags(fc.content.to_s.html_safe), length: 400) %>
-                    <span class="ln-btn-color hover:ln-btn-hover-color ">Continuer la lecture</span> 
+                   <%= truncate(strip_tags(fc.content.to_s.html_safe), length: 400) %>
+                <span class="ln-btn-color hover:ln-btn-hover-color ">Continuer la lecure</span>
                 <% end %>
             </div>
+
+
             <div class="flex justify-between border-t">
                 <div  class="flex ml-2 text-md font-semibold">
                     <%= link_to course_path(fc), class:"flex"  do %>
