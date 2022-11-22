@@ -6,6 +6,7 @@ class User < ApplicationRecord
   
         
   ### RELATIONS
+  has_one_attached :avatar
   has_many :levels, class_name: "Level", foreign_key: "user_id", dependent: :destroy
   has_many :materials, class_name: "Material", foreign_key: "user_id", dependent: :destroy
   has_many :schools, class_name: "School", foreign_key: "user_id", dependent: :destroy
