@@ -1,0 +1,36 @@
+<%= form_with(model: exercise, url:[@course, exercise], class: "contents") do |form| %>
+<%= form_error_notification(exercise) %>
+
+
+
+  <div class="my-5">
+    <%= form.label :title %>
+    <%= form.text_field :title, class: "block  rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :content %>
+    <%= form.rich_text_area :content, class: "block bg-white rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+
+  <div class="my-5">
+    <%= form.label :correction %>
+    <%= form.rich_text_area :correction, class: "block bg-white  rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :status %>
+    <%= form.text_field :status, class: "block  rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :source %>
+  <%= form.select :source, Exercise::SOURCE, label:"Matieres ...",
+    class:" border-red-400 rounded py-2 px-3", placeholder:"Série" %>
+
+  </div>
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
